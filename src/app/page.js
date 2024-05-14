@@ -1,95 +1,117 @@
-import Image from "next/image";
+"use client"
+import Link from "next/link";
 import styles from "./page.module.css";
+import { useState, useEffect } from 'react';
+import LoadingScreen from "@/components/LoadingScreen";
+import { AnimatePresence, motion } from "framer-motion";
+import Gallery from "@/components/Gallery";
 
 export default function Home() {
+  const languages = ['hello,', 'hallo,','bonjour,','안녕하세요','buongiorno,',',السلام علیکم']
+  const [currentLanguageIndex, setCurrentLanguageIndex] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
+  const [intervalId, setIntervalId] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [showOverlay, setShowOverlay] = useState(true);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setIsLoading(false);
+    }, 1500);
+
+    return () => clearTimeout(timeout);
+  }, []);
+
+  const rotateLanguages = () => {
+    const interval = setInterval(() => {
+      setCurrentLanguageIndex((prevIndex) => (prevIndex + 1) % languages.length);
+    }, 350); 
+    
+
+    setIntervalId(interval);
+  };
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+    if (!intervalId) {
+      rotateLanguages();
+    }
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+    setCurrentLanguageIndex(0);
+    clearInterval(intervalId);
+    setIntervalId(null);
+  };
+
+  if (isLoading) {
+    return <LoadingScreen />;
+  }
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <AnimatePresence mode="wait">
+    {isLoading ? (
+      <LoadingScreen />
+    ) : (
+      <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.5 }}
+          style={{ position: 'relative', width: '100%', height: '100%' }}
+        >
+          {/* Overlay */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.5 }}
+            style={{
+              position: 'fixed',
+              top: 0,
+              left: 0,
+              width: '100%',
+              height: '100%',
+              backgroundColor: 'black',
+              zIndex: 10,
+            }}
+          />
+
+          {/* Main Content */}
+          <motion.main
+            initial={{ opacity: 0, y: '100vh' }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: '100vh' }}
+            transition={{ duration: 0.5 }}
+            className={styles.main}
+            style={{ position: 'relative', zIndex: 20 }}
           >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+            <div className={styles.container1}>
+              <div className={styles.welcome}>
+              <h1>
+                <span onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                  {isHovered ? languages[currentLanguageIndex] : languages[0]}
+                </span>
+              </h1>
+              <h1>it&apos;s fatima</h1>
+              <p>full stack developer</p>
+            </div>
+            <div>
+              <nav className={styles.nav}>
+                <Link href="about">About</Link>
+                <Link href="/projects">Projects</Link>
+                <Link href="/">Contact</Link>
+              </nav>
+            </div>
+            </div>
+          <div className={styles.container2}>
+            <Gallery />
+          </div>
+          </motion.main>
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 }
+
