@@ -1,37 +1,30 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react';
 import styles from '@/app/page.module.css'
 import Image from 'next/image';
-import Lenis from '@studio-freight/lenis'
-import { useTransform, useScroll, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
+import Link from 'next/link';
+
 
 const images = [
-    "1.png",
-    "2.png",
-    "3.png",
-    "4.png",
-    "5.png",
-    "6.png",
+    "london.jpg",
+    "pakistan.jpg",
+    "paris.JPG",
+    "oxford.JPG",
+    "fatima.JPG",
+    "coffee.JPG",
+    "lisbon.jpg",
+    "brussels.JPG",
+    "plant.JPG",
+    "office.jpg",
 ]
-
-export default function AboutPage() {
-    return (
-        <main className={styles.main}>
-            <div className={styles.gallery}>
-                <Column images={[images[1], images[2], images[3]]}/>
-                <Column images={[images[4], images[5], images[6]]}/>
-            </div>
-        </main>
-    )
-}
 
 const Column = ({images}) => {
     return (
-        <div className={styles.column}>
+        <div className={styles.columnAbout}>
             {
                 images.map( (src, index) => {
-                    return <div key={index} className= {styles.imageContainer}>
+                    return <div key={index} className= {styles.imageContainerAbout}>
                 <Image
                     src={`/images/${src}`}
                     fill
@@ -41,5 +34,29 @@ const Column = ({images}) => {
     })
 }
     </div>
+    )
+}
+
+export default function AboutPage() {
+    return (
+        <main className={styles.main}>
+             <header>
+                <nav className={styles.headernav}>
+                <Link href="/">Home</Link>
+                <Link href="/projects">Work</Link>
+                <Link href="/contact">Contact</Link>
+              </nav>
+            </header>
+            <motion.div className={styles.galleryAbout}>
+                <Column images={[images[0], images[1], images[2], images[3], images[4]]}/> 
+                <Column images={[images[5], images[6], images[7], images[8], images[9]]}/>
+            </motion.div>
+            <div className={styles.projectinfocontainer}>
+                <div className={styles.projectinfotext}>
+                    <p><strong>About</strong></p>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac velit sed nisl dapibus bibendum ut ut ex. Ut feugiat, turpis quis laoreet vestibulum, nisl dui molestie purus, sed euismod arcu massa id ex. Suspendisse ultrices eleifend odio sed consequat. Cras interdum varius tristique. Phasellus semper vel arcu eu scelerisque. Maecenas dignissim ornare justo. Fusce vel sem et sapien feugiat condimentum in molestie odio.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac velit sed nisl dapibus bibendum ut ut ex. Ut feugiat, turpis quis laoreet vestibulum, nisl dui molestie purus, sed euismod arcu massa id ex. Suspendisse ultrices eleifend odio sed consequat. Cras interdum varius tristique. Phasellus semper vel arcu eu scelerisque. Maecenas dignissim ornare justo. Fusce vel sem et sapien feugiat condimentum in molestie odio.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p></div>
+            </div>
+
+        </main>
     )
 }

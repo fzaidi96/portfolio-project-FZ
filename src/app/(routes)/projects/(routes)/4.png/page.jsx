@@ -24,7 +24,7 @@ export default function Project4() {
                 <div className={styles.projectinfotext}>
                     <p><strong>About</strong></p>
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac velit sed nisl dapibus bibendum ut ut ex. Ut feugiat, turpis quis laoreet vestibulum, nisl dui molestie purus, sed euismod arcu massa id ex. Suspendisse ultrices eleifend odio sed consequat. Cras interdum varius tristique. Phasellus semper vel arcu eu scelerisque. Maecenas dignissim ornare justo. Fusce vel sem et sapien feugiat condimentum in molestie odio. </p></div>
-                <button className='deployment'>Visit live site</button>
+                <Link href='https://week-8-assignment.vercel.app/urls/blog'><button className='deployment'>Visit live site</button></Link>
             </div>
             </main>
         </div>
