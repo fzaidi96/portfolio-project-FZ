@@ -25,7 +25,7 @@ export default function Home() {
   const rotateLanguages = () => {
     const interval = setInterval(() => {
       setCurrentLanguageIndex((prevIndex) => (prevIndex + 1) % languages.length);
-    }, 350); 
+    }, 150); 
     
 
     setIntervalId(interval);
@@ -100,11 +100,12 @@ export default function Home() {
             <div>
               <nav className={styles.nav}>
                 <Link href="about">About</Link>
-                <Link href="/projects">Projects</Link>
-                <Link href="/">Contact</Link>
+                <Link href="/projects">Work</Link>
+                <Link href="/contact">Contact</Link>
               </nav>
             </div>
             </div>
+
           <div className={styles.container2}>
             <Gallery />
           </div>

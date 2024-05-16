@@ -24,39 +24,23 @@ a:hover {
   text-decoration: underline;
 }
 
-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 1rem;
-}
-
 button {
-  padding: 0.5rem;
-  border: 0.5px solid #E6EFE9;
-  border-radius: 40px;
-  background-color: #1B1F3B;
-  color: #E6EFE9;
-  font-size: 16px;
+  background-color: #E6EFE9;
+  border: #8F8389 2px solid;
+  color:  #8F8389;
+  border-radius: 50%;
+  width: 8rem; /* Set equal width and height */
+  height: 8rem; /* Set equal width and height */
+  font-size: large;
+  transition: transform 0.2s;
 }
 
 button:hover {
-  transform: scale(1.09); 
-  transition: transform 0.3s ease; 
+  transform: scale(1.04);
 }
 
-.header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  z-index: 1;
-}
-
-.header nav {
-  position: fixed;
-  right:0;
-  padding:2rem;
-  align-items: center;
+button:active {
+  transform: scale(0.9);
 }
 
 @media (prefers-color-scheme: dark) {

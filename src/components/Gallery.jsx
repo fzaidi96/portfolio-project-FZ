@@ -40,8 +40,8 @@ export default function Gallery() {
         <main className={styles.main}>
             <div className={styles.spacer}></div>
             <div ref={container} className={styles.gallery}>
-                <Column images={[images[1], images[2], images[3]]} y={y}/>
-                <Column images={[images[4], images[5], images[6]]} y={y2}/>
+                <Column images={[images[0], images[1], images[2]]} y={y}/>
+                <Column images={[images[3], images[4], images[5]]} y={y2}/>
             </div>
             <div className={styles.spacer}></div>
         </main>
@@ -54,11 +54,12 @@ const Column = ({images, y=0}) => {
             {
                 images.map( (src, index) => {
                     return <div key={index} className= {styles.imageContainer}>
-                <Image
+                <a href={`/projects/${src}`}>
+                    <Image
                     src={`/images/${src}`}
                     fill
                     alt="image"
-                 />
+                 /></a>
             </div>
     })
 }
