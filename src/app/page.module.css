@@ -15,7 +15,7 @@
     flex-direction: row;
     align-items: center;
     gap: 1rem;
-    border: solid 1px #E6EFE9;
+    border: solid 2px #E6EFE9;
     border-radius: 20px;
     width: fit-content;
 }
@@ -148,7 +148,37 @@
     }
 }
 
+.container {
+    height: 100vh;
+    width: calc(100vw - 4rem); /* Subtracting the left and right margins */
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #E6EFE9;
+    margin: 3rem 1rem 1rem 1rem;
+    box-sizing: border-box; /* Ensures the border and padding are included in the width */
+    gap:1rem;
+    padding:1rem;
+    .workH1 {
+        font-size: 200px;
+        padding-left: 1rem;
+    }
+    .workP{
+        padding-left: 2.5rem;
+        width: 1000px;
+    }
+}
 
+
+.navList {
+    position: relative;
+    list-style: none;
+    padding-left: 1;
+}
+
+.navList li {
+    display: inline;
+    margin-right: 20px;
+}
   
 @media only screen and (max-width: 767px) {
     .main {

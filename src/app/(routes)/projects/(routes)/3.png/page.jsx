@@ -11,8 +11,9 @@ export default function Project3() {
             <main className={styles.projectpages}>
             <header>
                 <nav className={styles.headernav}>
-                <Link href="/projects">Work</Link>
+                <Link href="/">Home</Link>
                 <Link href="/about">About</Link>
+                <Link href="/projects">Work</Link>
                 <Link href="/contact">Contact</Link>
               </nav>
             </header>
