@@ -1,5 +1,5 @@
 .welcome {
-    font-size: 3.5rem;
+    font-size: 3.7rem;
     position: relative;
     left: 20px;
     top: 90px;
@@ -159,12 +159,13 @@
     gap:1rem;
     padding:1rem;
     .workH1 {
-        font-size: 200px;
-        padding-left: 1rem;
+        font-size: 180px;
+        border-right: solid 1px #E6EFE9;
     }
     .workP{
         padding-left: 2.5rem;
         width: 1000px;
+        border-left: 1px solid #E6EFE9;
     }
 }
 

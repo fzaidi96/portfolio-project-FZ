@@ -7,28 +7,31 @@ import Link from 'next/link';
 
 
 const images = [
-    "london.jpg",
-    "pakistan.jpg",
-    "paris.JPG",
-    "oxford.JPG",
-    "fatima.JPG",
-    "coffee.JPG",
-    "lisbon.jpg",
-    "brussels.JPG",
-    "plant.JPG",
-    "office.jpg",
-]
+    { src: "london.jpg", blurDataURL: "london-ph.jpg" },
+    { src: "pakistan.jpg", blurDataURL: "pakistan-ph.jpg" },
+    { src: "paris.jpg", blurDataURL: "paris-ph.jpg" },
+    { src: "oxford.jpg", blurDataURL: "oxford-ph.jpg" },
+    { src: "fatima.jpg", blurDataURL: "fatima-ph.jpg" },
+    { src: "coffee.jpg", blurDataURL: "coffee-ph.jpg" },
+    { src: "lisbon.jpg", blurDataURL: "lisbon-ph.jpg" },
+    { src: "brussels.jpg", blurDataURL: "brussels-ph.jpg" },
+    { src: "plant.jpg", blurDataURL: "plant-ph.jpg" },
+    { src: "office.jpg", blurDataURL: "office-ph.jpg" },
+];
+
 
 const Column = ({images}) => {
     return (
         <div className={styles.columnAbout}>
             {
-                images.map( (src, index) => {
+                images.map( (img, index) => {
                     return <div key={index} className= {styles.imageContainerAbout}>
                 <Image
-                    src={`/images/${src}`}
+                    src={`/images/${img.src}`}
                     fill
                     alt="image"
+                    placeholder='blur'
+                    blurDataURL={img.blurDataURL}
                  />
             </div>
     })
