@@ -10,12 +10,12 @@ const images = [
     { src: "london.jpg", blurDataURL: "london-ph.jpg" },
     { src: "pakistan.jpg", blurDataURL: "pakistan-ph.jpg" },
     { src: "paris.jpg", blurDataURL: "paris-ph.jpg" },
-    { src: "oxford.jpg", blurDataURL: "oxford-ph.jpg" },
+    { src: "oxford.JPG", blurDataURL: "oxford-ph.jpg" },
     { src: "fatima.jpg", blurDataURL: "fatima-ph.jpg" },
-    { src: "coffee.jpg", blurDataURL: "coffee-ph.jpg" },
-    { src: "lisbon.jpg", blurDataURL: "lisbon-ph.jpg" },
-    { src: "brussels.jpg", blurDataURL: "brussels-ph.jpg" },
-    { src: "plant.jpg", blurDataURL: "plant-ph.jpg" },
+    { src: "coffee.JPG", blurDataURL: "coffee-ph.jpg" },
+    { src: "lisbon.JPG", blurDataURL: "lisbon-ph.jpg" },
+    { src: "brussels.JPG", blurDataURL: "brussels-ph.jpg" },
+    { src: "plant.JPG", blurDataURL: "plant-ph.jpg" },
     { src: "office.jpg", blurDataURL: "office-ph.jpg" },
 ];
 
