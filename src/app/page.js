@@ -7,7 +7,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Gallery from "@/components/Gallery";
 
 export default function Home() {
-  const languages = ['hello,', 'hallo,','bonjour,','안녕하세요','buongiorno,',',السلام علیکم']
+  const languages = ['hello.', 'hallo.','bonjour.','안녕하세요.','buongiorno.','.السلام علیکم']
   const [currentLanguageIndex, setCurrentLanguageIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
   const [intervalId, setIntervalId] = useState(null);
@@ -73,7 +73,7 @@ export default function Home() {
               left: 0,
               width: '100%',
               height: '100%',
-              backgroundColor: 'black',
+              backgroundColor: '#2D2D2D',
               zIndex: 10,
             }}
           />

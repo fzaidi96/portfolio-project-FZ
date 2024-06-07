@@ -22,7 +22,7 @@ export default function Gallery() {
         offset: ['start end', 'end start']
     })
 
-    const y = useTransform(scrollYProgress, [0, 1], [0, 100])
+    const y = useTransform(scrollYProgress, [0, 1], [0, 10])
     const y2 = useTransform(scrollYProgress, [1, 0], [0, 500])
 
     useEffect( () => {

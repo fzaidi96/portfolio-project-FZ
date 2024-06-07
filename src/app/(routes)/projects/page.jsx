@@ -1,10 +1,10 @@
 import Link from "next/link";
 import styles from '@/app/page.module.css';
-import Lenis from '@studio-freight/lenis';
+import VideoGallery from "@/components/VideoGallery";
 
 export default function ProjectsPage() {
     return (
-        <main style={{ overflowY: 'auto',overflowX: 'hidden', scrollBehavior: 'smooth' }} className={styles.main}>
+        <main className={styles.main}>
             <header>
                 <nav className={styles.headernav}>
                     <Link href="/">Home</Link>
@@ -14,7 +14,7 @@ export default function ProjectsPage() {
             </header>
             
             <div className={styles.container} id="section1">
-                <h1 className={styles.workH1}>My Work</h1>
+                <h1 className={styles.workH1}>My Work .</h1>
                 <p className={styles.workP}><strong>All my past projects, content and work experience.</strong></p>
                 <p className={styles.workP}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac velit sed nisl dapibus bibendum ut ut ex. Ut feugiat, turpis quis laoreet vestibulum, nisl dui molestie purus, sed euismod arcu massa id ex. Suspendisse ultrices eleifend odio sed consequat. Cras interdum varius tristique. Phasellus semper vel arcu eu scelerisque. Maecenas dignissim ornare justo. Fusce vel sem et sapien feugiat condimentum in molestie odio.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac velit sed nisl dapibus bibendum ut ut ex. Ut feugiat, turpis quis laoreet vestibulum, nisl dui molestie purus, sed euismod arcu massa id ex.</p>
                 <nav>
@@ -27,7 +27,7 @@ export default function ProjectsPage() {
                 </nav>
             </div>
             <div className={styles.container} id="section2">Web Development</div>
-            <div className={styles.container} id="section3">Social Media Content</div>
+            <div className={styles.container} id="section3">Social Media Content <VideoGallery /></div>
             <div className={styles.container} id="section4">Copywriting</div>
             <div className={styles.container} id="section5">Brand & Design</div>
         </main>

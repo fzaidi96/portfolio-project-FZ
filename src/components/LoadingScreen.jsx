@@ -3,7 +3,7 @@ import styles from "@/app/page.module.css";
 
 
 const LoadingScreen = () => {
-    const languages = ['hello,', 'hallo,','bonjour,','안녕하세요','buongiorno,',',السلام علیکم'];
+    const languages = ['hello.', 'hallo.','bonjour.','안녕하세요.','buongiorno.','.السلام علیکم'];
     const [currentLanguageIndex, setCurrentLanguageIndex] = useState(0);
   
     useEffect(() => {
