@@ -5,6 +5,7 @@ import styles from '@/app/page.module.css'
 import Image from 'next/image';
 import Lenis from '@studio-freight/lenis'
 import { useTransform, useScroll, motion } from 'framer-motion';
+import Link from 'next/link';
 
 const images = [
     "1.png",
@@ -54,12 +55,12 @@ const Column = ({images, y=0}) => {
             {
                 images.map( (src, index) => {
                     return <div key={index} className= {styles.imageContainer}>
-                <a href={`/projects/${src}`}>
+                <Link href={`/projects/${src}`}>
                     <Image
                     src={`/images/${src}`}
                     fill
                     alt="image"
-                 /></a>
+                 /></Link>
             </div>
     })
 }

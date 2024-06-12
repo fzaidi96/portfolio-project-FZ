@@ -95,7 +95,7 @@ export default function Home() {
                 </span>
               </h1>
               <h1>it&apos;s fatima</h1>
-              <p>full stack developer</p>
+              <p style={{fontSize:60}}>full stack developer</p>
             </div>
             <div>
               <nav className={styles.nav}>

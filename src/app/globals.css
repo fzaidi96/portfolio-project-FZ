@@ -12,16 +12,11 @@ body {
   overflow-y: scroll;
   background-color: #8F8389;
   color: #E6EFE9;
-  padding: 1rem;
 }
 
 a {
   color: inherit;
   text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 button {

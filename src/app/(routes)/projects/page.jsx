@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styles from '@/app/page.module.css';
 import VideoGallery from "@/components/VideoGallery";
+import Image from "next/image";
 
 export default function ProjectsPage() {
     return (
@@ -22,12 +23,18 @@ export default function ProjectsPage() {
                         <li><Link href="#section2">• Coding</Link></li>
                         <li><Link href="#section3">• Socials</Link></li>
                         <li><Link href="#section4">• Copywriting</Link></li>
-                        <li><Link href="#section5">• Design</Link></li>
+                        <li><Link href="#section5">• Branding & More</Link></li>
                     </ul>
                 </nav>
             </div>
-            <div className={styles.container} id="section2">Web Development</div>
-            <div className={styles.container} id="section3">Social Media Content <VideoGallery /></div>
+            <div className={styles.container} id="section2"> 
+                <div className={styles.codingProjects}>
+                    <h1>web dev</h1> </div>
+                </div>
+            <div className={styles.container} id="section3"><div className={styles.codingProjects}>
+                    <h1>social content</h1> </div>
+                    <VideoGallery />
+            </div>
             <div className={styles.container} id="section4">Copywriting</div>
             <div className={styles.container} id="section5">Brand & Design</div>
         </main>
