@@ -19,6 +19,7 @@ export default function Project1() {
             </header>
                 <div className={styles.projecttitlecontainer}>
                     <h1 className={styles.projecttitle}>message board</h1>
+                    <div className={styles.tagcontainer}><p className={styles.tags}>Bootcamp Project</p><p className={styles.tags}>UI/UX</p></div>
                 </div>
             
                 <div className={styles.projectinfocontainer}>

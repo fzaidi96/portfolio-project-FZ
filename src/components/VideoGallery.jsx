@@ -5,18 +5,18 @@ import Lenis from '@studio-freight/lenis';
 import { useTransform, useScroll, motion } from 'framer-motion';
 
 const videos = [
-  "1.mp4",
-  "2.mp4",
-  "3.mp4",
-  "4.mp4",
-  "5.mp4",
-  "6.mp4",
-  "7.mp4",
-  "8.mp4",
-  "9.mp4",
-  "10.mp4",
-  "11.mp4",
-  "12.mp4",
+  { src: "1.mp4", link: "https://www.tiktok.com/@bimbleapp/video/7075718511263223045?lang=en" },
+  { src: "2.mp4", link: "https://www.tiktok.com/@bimbleapp/video/7114330414897990917?lang=en" },
+  { src: "3.mp4", link: "https://www.tiktok.com/@bimbleapp/video/7125055594544876805?lang=en" },
+  { src: "4.mp4", link: "https://www.tiktok.com/@bimbleapp/video/7124299129244716294?lang=en" },
+  { src: "5.mp4", link: "https://www.instagram.com/reel/Cfb87bdInqa/" },
+  { src: "6.mp4", link: "https://portfolio-project-fz.vercel.app/videos/6.mp4" },
+  { src: "7.mp4", link: "https://portfolio-project-fz.vercel.app/videos/7.mp4" },
+  { src: "8.mp4", link: "https://portfolio-project-fz.vercel.app/videos/8.mp4" },
+  { src: "9.mp4", link: "https://portfolio-project-fz.vercel.app/videos/9.mp4" },
+  { src: "10.mp4", link: "https://portfolio-project-fz.vercel.app/videos/10.mp4" },
+  { src: "11.mp4", link: "https://www.instagram.com/reel/CfWp7DSouSE/" },
+  { src: "12.mp4", link: "https://portfolio-project-fz.vercel.app/videos/12.mp4" },
 ]
 
 export default function VideoGallery() {
@@ -76,12 +76,21 @@ const Column = ({videos, y}) => {
       style={{y}}
       >
       {
-        videos.map( (src, i) => {
+        videos.map( (video, i) => {
           return <div key={i} className={styles.videoContainer}>
-            <video className={styles.video} controls controlslist="nofullscreen nodownload" playsInline>
-              <source src={`/videos/${src}`} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            {video.link ? (
+              <a href={video.link} target="_blank" rel="noopener noreferrer">
+                <video className={styles.video} controls controlsList="nofullscreen nodownload" playsInline>
+                  <source src={`/videos/${video.src}`} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </a>
+            ) : (
+              <video className={styles.video} controls controlsList=" nofullscreen nodownload" playsInline>
+                <source src={`/videos/${video.src}`} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            )}
           </div>
         })
       }
