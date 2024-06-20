@@ -19,6 +19,7 @@ export default function Project6() {
             </header>
                 <div className={styles.projecttitlecontainer}>
                     <h1 className={styles.projecttitle}>8-bit game</h1>
+                    <div className={styles.tagcontainer}><p className={styles.tags}>Bootcamp Project</p><p className={styles.tags}>React JS</p><p className={styles.tags}>State Management</p><p className={styles.tags}>Game Mechanics</p></div>
                 </div>
             
                 <div className={styles.projectinfocontainer}>

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect } from 'react';
 import { useRouter, usePathname, useSearchParams } from 'next/navigation'
 
-export default function Project4() {
+export default function Project5() {
        
     return (
         <div>
@@ -18,14 +18,15 @@ export default function Project4() {
               </nav>
             </header>
                 <div className={styles.projecttitlecontainer}>
-                    <h1 className={styles.projecttitle}>brand blog</h1>
+                    <h1 className={styles.projecttitle}>moodboard</h1>
+                    <div className={styles.tagcontainer}><p className={styles.tags}>Group Project</p><p className={styles.tags}>SQL</p><p className={styles.tags}>Third-party API integration</p></div>
                 </div>
             
                 <div className={styles.projectinfocontainer}>
                 <div className={styles.projectinfotext}>
                     <p><strong>About</strong></p>
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac velit sed nisl dapibus bibendum ut ut ex. Ut feugiat, turpis quis laoreet vestibulum, nisl dui molestie purus, sed euismod arcu massa id ex. Suspendisse ultrices eleifend odio sed consequat. Cras interdum varius tristique. Phasellus semper vel arcu eu scelerisque. Maecenas dignissim ornare justo. Fusce vel sem et sapien feugiat condimentum in molestie odio. </p></div>
-                <Link href='https://week-8-assignment.vercel.app/urls/blog'><button className='deployment'>Visit live site</button></Link>
+                <Link href='https://moody-faa-esry.onrender.com/'><button className='deployment'>Visit live site</button></Link>
             </div>
             </main>
         </div>

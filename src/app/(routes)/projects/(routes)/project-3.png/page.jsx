@@ -19,6 +19,7 @@ export default function Project3() {
             </header>
                 <div className={styles.projecttitlecontainer}>
                     <h1 className={styles.projecttitle}>space Y </h1>
+                    <div className={styles.tagcontainer}><p className={styles.tags}>First Project</p><p className={styles.tags}>UI/UX</p><p className={styles.tags}>HTML, CSS, JS (vanilla)</p></div>
                 </div>
             
                 <div className={styles.projectinfocontainer}>

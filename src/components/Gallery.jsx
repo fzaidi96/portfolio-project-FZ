@@ -8,12 +8,12 @@ import { useTransform, useScroll, motion } from 'framer-motion';
 import Link from 'next/link';
 
 const images = [
-    "1.png",
-    "2.png",
-    "3.png",
-    "4.png",
-    "5.png",
-    "6.png",
+    "project-1.png",
+    "project-2.png",
+    "project-3.png",
+    "project-4.png",
+    "project-5.png",
+    "project-6.png",
 ]
 
 export default function Gallery() {

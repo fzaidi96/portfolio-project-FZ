@@ -8,7 +8,7 @@ export default function ProjectsPage() {
     return (
         <main className={styles.main}>
             <header>
-                <nav className={styles.headernav}>
+                <nav className={styles.projectsnav}>
                     <Link href="/">Home</Link>
                     <Link href="/projects">Work</Link>
                     <Link href="/contact">Contact</Link>
@@ -41,7 +41,7 @@ export default function ProjectsPage() {
                 </div> 
 
               {/* section three - social media content */}
-            <div className={styles.container} id="section3"><div className={styles.socialProjects}>
+            <div className={styles.socialContainer} id="section3"><div className={styles.socialProjects}>
                     <h1>social content</h1> 
                     <div className={styles.socialText}> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac velit sed nisl dapibus bibendum ut ut ex. Ut feugiat, turpis quis laoreet vestibulum, nisl dui molestie purus, sed euismod arcu massa id ex. Suspendisse ultrices eleifend odio sed consequat.</p></div></div> 
                     <VideoGallery />
@@ -50,10 +50,12 @@ export default function ProjectsPage() {
             {/* section four - copywriting*/}
             <div className={styles.container} id="section4">
             <container className={styles.section4}>
-                <div className={styles.copywritingExamples}><button>hello</button>
-                <button>hello</button>
-                <button>hello</button>
-                <button>hello</button>
+                <div className={styles.copywritingExamples}>
+                    <div className={styles.img}><Link href="https://www.instagram.com/p/CgpbubjBFGe/"><Image src="/images/one.png" width={200} height={200} alt="social media"/></Link></div>
+                    <div className={styles.img}><Link href="https://www.instagram.com/p/ChDSpA-LCHF/"><Image src="/images/two.png" width={200} height={200} alt="social media"/></Link></div>
+                    <div className={styles.img}><Link href="https://www.instagram.com/p/CfzQJaShZn8/"><Image src="/images/three.png" width={200} height={200} alt="social media"/></Link></div>
+                    <div className={styles.img}><Link href="https://www.instagram.com/p/CamLsaYsVfQ/"><Image src="/images/four.png" width={200} height={200} alt="social media"/></Link></div>
+                    <div className={styles.img}><Link href="https://bimbleapp.medium.com/this-christmas-gift-with-bimble-1c7e97143325"><Image src="/images/five.png" width={200} height={200} alt="social media"/></Link></div>
                 </div>
                 <p className={styles.copywritingText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac velit sed nisl dapibus bibendum ut ut ex. Ut feugiat, turpis quis laoreet vestibulum, nisl dui molestie purus, sed euismod arcu massa id ex. Suspendisse ultrices eleifend odio sed consequat.</p>   
                 <div className={styles.codingProjects}><h1>copywriting</h1></div>
