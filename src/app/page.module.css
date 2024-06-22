@@ -1,15 +1,16 @@
 /* loading screen styling */
 .welcome {
-    font-size: 3.7rem;
+    font-size: 3rem;
     position: relative;
     left: 20px;
-    top: 90px;
+    top: 100px;
     color: #E6EFE9;
+    z-index: 1;
 }
 
 .nav {
     position: relative;
-    left:35px;
+    left:30px;
     top:120px;
     padding:2rem;
     display: flex;
@@ -99,9 +100,10 @@
     padding-top:2vw;
     box-sizing: border-box;
     overflow: hidden;
+    z-index: 0;
     .column{
-        width: 365px;
-        height: 1700px;
+        width: 290px;
+        height: 1300px;
         display: flex;
         flex-direction: column;
         gap: 1vw;
@@ -123,6 +125,7 @@
 .container1 {
     position: fixed;
     left: 0;
+    z-index:1;
 }
 
 .container2 {
@@ -198,7 +201,18 @@
 
 /* about page styling */
 .aboutH1 {
-    font-size: 100px;
+    font-size: 90px;
+}
+
+.abouttext {
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+  text-align: left;
+  width:420px;
+  border-left: solid 1px #E6EFE9;
+  padding-left: 1rem;
+  font-size: 15px;
 }
 
 .galleryAbout{
@@ -209,12 +223,11 @@
     top:0px;
     overflow: hidden;
     .columnAbout{
-        width: 175px;
-        height: 1800px;
+        width: 240px;
+        height: 1700px;
         display: flex;
         flex-direction: column;
         gap: 1rem;
-        min-width: 250px;
         position: relative;
         .imageContainerAbout{
             width: 100%;
@@ -230,7 +243,7 @@
 }
  /* /project styling */
 .container {
-    height: 125vh;
+    height: 140vh;
     width: 100vw;
     background-color: #2D2D2D;
     display: flex;
@@ -244,6 +257,7 @@
     .workP{
         padding-left: 2.5rem;
         width: 1000px;
+        font-size: 15px;
     }
 }
 
@@ -307,7 +321,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  margin-top:4rem;
 }
 
 .codingProjects{
@@ -324,7 +337,7 @@
   .codingText p{
     width: 500px;
     text-align: left;
-    font-size: 17px;
+    font-size: 14px;
   }
 
 
@@ -345,7 +358,7 @@
   text-align: right;
   width: 500px;
   margin-right: 6rem;
-  font-size: 17px;
+  font-size: 14px;
 }
 
 /* social media gallery */
@@ -418,6 +431,7 @@
     padding-top: 2rem;
     text-align: right;
     margin-left: 20rem;
+    font-size: 14px;
   }
 
   .copywritingExamples {
@@ -460,6 +474,8 @@
 .tagText {
   color: #2D2D2D;
   text-align: center;
+  color:#8F8389;
+  font-size: 14px;
 }
 
                           
@@ -470,7 +486,7 @@
   display: flex;
   flex-direction: column;
   width:100vw;
-  height:175vh;
+  height:200vh;
   position: absolute;
   background-color: #2D2D2D;
   padding-top: 5rem;

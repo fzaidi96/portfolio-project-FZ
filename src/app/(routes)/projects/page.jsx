@@ -10,7 +10,7 @@ export default function ProjectsPage() {
             <header>
                 <nav className={styles.projectsnav}>
                     <Link href="/">Home</Link>
-                    <Link href="/projects">Work</Link>
+                    <Link href="/about">About</Link>
                     <Link href="/contact">Contact</Link>
                 </nav>
             </header>
@@ -20,7 +20,7 @@ export default function ProjectsPage() {
                 <p className={styles.workP}><strong>All my past projects, content and work experience.</strong></p>
                 <p className={styles.workP}>Welcome to the whirlwind tour of my professional journey! From full stack web development to social media marketing and copywriting, I&apos;ve worn many hats and loved every moment of it. My journey started in digital marketing, having joined a grad scheme at a London agency where I was trained in PPC Search and Social. I soon found myself delving head first into the world of startup and before I knew it I was the marketing team!  Seeking to pivot into UI/UX and Product Management, I decided to learn web development and enrolled on bootcamp where I got hands on with coding and learned how to build the products I used to market.</p>
                 
-                <p className={styles.workP}> I&apos;ve worn many hats along my journey - I even translated work that got published! - but I&apos; come to find a real passion for creating and for solving problems. My range of experience means I bring a unique perspective to my work. Dive into my projects and see the full spectrum of my work, creativity, and experience. I promise you won&apos;t be bored!</p>
+                <p className={styles.workP}> I&apos;ve worn many hats along my journey - I even translated work that got published! - but I&apos;ve come to find a real passion for creating and for solving problems. My range of experience means I bring a unique perspective to my work. Dive into my projects and see the full spectrum of my work, creativity, and experience. I promise you won&apos;t be bored!</p>
                 <nav>
                     <ul className={styles.navList}>
                         <li><Link href="#section2">• Coding</Link></li>
