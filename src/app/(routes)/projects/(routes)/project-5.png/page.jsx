@@ -25,7 +25,7 @@ export default function Project5() {
                 <div className={styles.projectinfocontainer}>
                 <div className={styles.projectinfotext}>
                     <p><strong>About</strong></p>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac velit sed nisl dapibus bibendum ut ut ex. Ut feugiat, turpis quis laoreet vestibulum, nisl dui molestie purus, sed euismod arcu massa id ex. Suspendisse ultrices eleifend odio sed consequat. Cras interdum varius tristique. Phasellus semper vel arcu eu scelerisque. Maecenas dignissim ornare justo. Fusce vel sem et sapien feugiat condimentum in molestie odio. </p></div>
+                <p>Developed a moodboard app using JavaScript, integrating API calls to fetch and display images from Unsplash. Demonstrates expertise in asynchronous programming, DOM manipulation, event handling, and dynamic content rendering. Enhanced functionality with user selection, image liking, and seamless updates for an engaging user experience.</p></div>
                 <Link href='https://moody-faa-esry.onrender.com/'><button className='deployment'>Visit live site</button></Link>
             </div>
             </main>

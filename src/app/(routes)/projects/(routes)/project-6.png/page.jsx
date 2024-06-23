@@ -25,7 +25,7 @@ export default function Project6() {
                 <div className={styles.projectinfocontainer}>
                 <div className={styles.projectinfotext}>
                     <p><strong>About</strong></p>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac velit sed nisl dapibus bibendum ut ut ex. Ut feugiat, turpis quis laoreet vestibulum, nisl dui molestie purus, sed euismod arcu massa id ex. Suspendisse ultrices eleifend odio sed consequat. Cras interdum varius tristique. Phasellus semper vel arcu eu scelerisque. Maecenas dignissim ornare justo. Fusce vel sem et sapien feugiat condimentum in molestie odio. </p></div>
+                <p>Built a Cookie Clicker app using React featuring an interactive cookie-clicking interface and a shop function for upgrades. Demonstrates proficiency in React hooks (useState, useEffect), state management, component rendering, and user interaction handling. Enhanced user experience with visual feedback and game reset functionality.</p></div>
                 <Link href='https://main--ephemeral-gumdrop-7a1b95.netlify.app/'><button className='deployment'>Visit live site</button></Link>
             </div>
             </main>

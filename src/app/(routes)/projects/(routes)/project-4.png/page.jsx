@@ -25,7 +25,7 @@ export default function Project4() {
                 <div className={styles.projectinfocontainer}>
                 <div className={styles.projectinfotext}>
                     <p><strong>About</strong></p>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac velit sed nisl dapibus bibendum ut ut ex. Ut feugiat, turpis quis laoreet vestibulum, nisl dui molestie purus, sed euismod arcu massa id ex. Suspendisse ultrices eleifend odio sed consequat. Cras interdum varius tristique. Phasellus semper vel arcu eu scelerisque. Maecenas dignissim ornare justo. Fusce vel sem et sapien feugiat condimentum in molestie odio. </p></div>
+                <p>Created a blog hosting platform with Next.js, featuring categories, individual blog posts, and user comments. Utilized SQL for database interactions, showcasing skills in server-side rendering, dynamic routing, and state management. Enhanced user engagement through interactive comments and efficient content filtering by categories.</p></div>
                 <Link href='https://week-8-assignment.vercel.app/urls/blog'><button className='deployment'>Visit live site</button></Link>
             </div>
             </main>

@@ -25,7 +25,7 @@ export default function Project1() {
                 <div className={styles.projectinfocontainer}>
                 <div className={styles.projectinfotext}>
                     <p><strong>About</strong></p>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac velit sed nisl dapibus bibendum ut ut ex. Ut feugiat, turpis quis laoreet vestibulum, nisl dui molestie purus, sed euismod arcu massa id ex. Suspendisse ultrices eleifend odio sed consequat. Cras interdum varius tristique. Phasellus semper vel arcu eu scelerisque. Maecenas dignissim ornare justo. Fusce vel sem et sapien feugiat condimentum in molestie odio. </p></div>
+                <p>Developed a social media feed application using JavaScript, Express, and SQLite. Demonstrated skills include asynchronous API integration, dynamic DOM manipulation, and CRUD operations. Implemented user status management with client-side updates and server-side persistence, showcasing proficiency in full-stack web development and database handling.</p></div>
                 <Link href='https://fz-fb.onrender.com/'><button className='deployment'>Visit live site</button></Link>
             </div>
             </main>

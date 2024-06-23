@@ -26,7 +26,7 @@ export default function Project2() {
                 <div className={styles.projectinfocontainer}>
                 <div className={styles.projectinfotext}>
                     <p><strong>About</strong></p>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac velit sed nisl dapibus bibendum ut ut ex. Ut feugiat, turpis quis laoreet vestibulum, nisl dui molestie purus, sed euismod arcu massa id ex. Suspendisse ultrices eleifend odio sed consequat. Cras interdum varius tristique. Phasellus semper vel arcu eu scelerisque. Maecenas dignissim ornare justo. Fusce vel sem et sapien feugiat condimentum in molestie odio. </p></div>
+                <p>This project showcases the ability to build full-stack applications, integrating various technologies learned during the bootcamp to deliver a functional and user-friendly product.The app includes functionalities for creating, editing, and displaying posts, demonstrating proficiency in front-end development, server-side programming, and database management. Key features include dynamic form handling, data validation, user authentication, and seamless database interactions.</p></div>
                 <Link href='https://community-app-blush.vercel.app/'><button className='deployment'>Visit live site</button></Link>
             </div>
             </main>

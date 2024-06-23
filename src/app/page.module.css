@@ -17,7 +17,7 @@
     flex-direction: row;
     align-items: center;
     gap: 1rem;
-    border: solid 2px #E6EFE9;
+    border: solid 2px #ADCAB7;
     border-radius: 20px;
     width: fit-content;
 }
@@ -169,9 +169,10 @@
 .tags {
   font-size: small;
   padding:0.5rem;
-  border: solid 1px #E6EFE9;
-  background-color: #2D2D2D;
+  border: solid 0.5px #2D2D2D;
+  background-color: #ADCAB7;
   border-radius: 20px;
+  color:#2D2D2D;
 }
 
 .techstack {
@@ -349,6 +350,7 @@
 
 .socialProjects h1 {
   font-size: 125px;
+  color: #ADCAB7;
   letter-spacing: -20px;
   width:250px;
   border-right: solid 1px #E6EFE9;}
@@ -445,6 +447,7 @@
 
 .miscHeadline {
   margin-top:5rem;
+  color: #ADCAB7;
   margin-left: 5rem;
   width:360px;
   font-size: 70px;

@@ -25,7 +25,7 @@ export default function Project3() {
                 <div className={styles.projectinfocontainer}>
                 <div className={styles.projectinfotext}>
                     <p><strong>About</strong></p>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac velit sed nisl dapibus bibendum ut ut ex. Ut feugiat, turpis quis laoreet vestibulum, nisl dui molestie purus, sed euismod arcu massa id ex. Suspendisse ultrices eleifend odio sed consequat. Cras interdum varius tristique. Phasellus semper vel arcu eu scelerisque. Maecenas dignissim ornare justo. Fusce vel sem et sapien feugiat condimentum in molestie odio. </p></div>
+                <p>Recreated the SpaceX landing page using HTML, CSS, and JavaScript. Designed a responsive layout with fixed navigation, interactive audio controls, and visually engaging sections with background images. Implemented JavaScript to control music playback, enhancing the user experience with dynamic and interactive elements.</p></div>
                 <Link href='https://fzaidi96.github.io/spaceYtask/'><button className='deployment' >Visit live site</button></Link>
             </div>
             </main>
