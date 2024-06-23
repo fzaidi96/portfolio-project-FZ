@@ -168,11 +168,12 @@
 
 .tags {
   font-size: small;
+  font-weight: 500;
   padding:0.5rem;
-  border: solid 0.5px #2D2D2D;
-  background-color: #ADCAB7;
+  border: solid 0.5px #E6EFE9;
+  background-color: #2D2D2D ;
   border-radius: 20px;
-  color:#2D2D2D;
+  color: #ADCAB7;
 }
 
 .techstack {
@@ -214,6 +215,7 @@
   border-left: solid 1px #E6EFE9;
   padding-left: 1rem;
   font-size: 15px;
+  font-weight: 300;
 }
 
 .galleryAbout{
@@ -259,6 +261,7 @@
         padding-left: 2.5rem;
         width: 1000px;
         font-size: 15px;
+        font-weight: 300;
     }
 }
 
@@ -310,6 +313,10 @@
     position: relative;
     list-style: none;
     padding-left: 1;
+    color:#ADCAB7;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 1.5rem;
 }
 
 .navList li {
@@ -339,6 +346,12 @@
     width: 500px;
     text-align: left;
     font-size: 14px;
+    font-weight: 200;
+  }
+
+  .CTA {
+    color: #ADCAB7;
+    padding-top: 0.5rem;
   }
 
 
@@ -350,7 +363,6 @@
 
 .socialProjects h1 {
   font-size: 125px;
-  color: #ADCAB7;
   letter-spacing: -20px;
   width:250px;
   border-right: solid 1px #E6EFE9;}
@@ -361,6 +373,7 @@
   width: 500px;
   margin-right: 6rem;
   font-size: 14px;
+  font-weight: 200;
 }
 
 /* social media gallery */
@@ -429,11 +442,22 @@
   }
 
   .copywritingText {
-    width: 500px;
+    width: 520px;
     padding-top: 2rem;
     text-align: right;
     margin-left: 20rem;
     font-size: 14px;
+    font-weight: 200;
+  }
+
+  .copywritingTextCTA {
+    width: 520px;
+    padding-top: 2rem;
+    text-align: right;
+    margin-left: 20rem;
+    font-size: 14px;
+    font-weight: 200;
+    color: #ADCAB7;
   }
 
   .copywritingExamples {
@@ -488,31 +512,29 @@
 .contactPage {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width:100vw;
   height:200vh;
-  position: absolute;
   background-color: #2D2D2D;
-  padding-top: 5rem;
-  padding-left:3rem;
   z-index: -1;
   .title {
-    font-size: 60px;
-    margin-bottom: 1rem;
+    font-size: 80px;
+    margin-bottom: 3rem;
+    margin-top:4rem;
   }
   .email {
     display: flex;flex-direction: column;
-    font-size: 16px;
-    margin-bottom: 4rem;
-    margin-left:0.2rem;
-    gap:2rem;
+    font-size: 14px;
+    margin-bottom: 2rem;
+    gap:1rem;
   }
 
   .emailBox {
     display: flex;
     align-items: center;
     font-size: 14px;
-    gap:1rem;
-    margin-left: 1rem;
+    gap:2rem;
   }
 
 
@@ -521,11 +543,7 @@
     flex-direction: row;
     align-items: center;
     gap: 1rem;
-    font-size: 16px;
-    margin-left: 6rem;
-    margin-bottom: 14rem;
-    width: 1000px;
-    border-bottom : solid 1px #E6EFE9;
+    font-size: 14px;
   }
 
   .credits {
@@ -533,11 +551,15 @@
     flex-direction: column;
     font-size: 15px;
     gap:2rem;
+    margin-top: 5rem;
+    
   }
 
   .credits footer p {
     font-size: 9px;
-    margin-top:15vh;
+    margin-top:10vh;
+    position: relative;
+    bottom: 0%;
   }
 
 }
