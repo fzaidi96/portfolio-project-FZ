@@ -1,7 +1,6 @@
 import Link from "next/link";
 import styles from '@/app/page.module.css';
 import VideoGallery from "@/components/VideoGallery";
-import Gallery from "@/components/Gallery";
 import Image from "next/image";
 
 export default function ProjectsPage() {
@@ -60,7 +59,7 @@ export default function ProjectsPage() {
                     <div className={styles.img}><Link href="https://www.instagram.com/p/CamLsaYsVfQ/"><Image src="/images/four.png" width={200} height={200} alt="social media"/></Link></div>
                     <div className={styles.img}><Link href="https://bimbleapp.medium.com/this-christmas-gift-with-bimble-1c7e97143325"><Image src="/images/five.png" width={200} height={200} alt="social media"/></Link></div>
                 </div>
-                <p className={styles.copywritingTextCTA}><strong>I&apos;ve selected some of my favourite posts below that represent my best work.</strong></p> <p className={styles.copywritingText}>I have a degree in literature so naturally I know and love good writing. And through my experience in marketing, I have also come to know and love good copy. Some of my achiements include managing a blog - editing every piece and writing my own - with a readership of 20k, translating a German text for publication in English, and of course, writing 100s of social media captions.</p>    
+                <p className={styles.copywritingTextCTA}><strong>I&apos;ve selected posts below that represent my favourite work and style.</strong></p> <p className={styles.copywritingText}>I have a degree in literature so naturally I know and love good writing. And through my experience in marketing, I have also come to know and love good copy. Some of my achiements include managing a blog - editing every piece and writing my own - with a readership of 20k, translating a German text for publication in English, and of course, writing 100s of social media captions.</p>    
                 <div className={styles.codingProjects}><h1>copywriting</h1></div>
              </container>
              </div>
