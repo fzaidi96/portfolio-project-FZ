@@ -578,7 +578,7 @@
     .main {
         display: flex;
         flex-direction: column;
-        min-height: fit-content;
+        min-height: 100vh;
       }
       .loading {
         font-size: 2rem;
@@ -592,15 +592,29 @@
       .galleryAbout {
         display:none;
       }
+
+      .headernav {
+        font-size: 10px;
+        position: fixed;
+        top: 1px;
+        right: 2px;
+        gap: 0.5rem;
+      }
+
+  
+
     .aboutH1 {
       position: fixed;
-      top:10%;
-      left:10%;
+      top:5%;
+      left:5%;
+      margin-top: 1rem;
+      margin-bottom: 3rem;
     }
     .abouttext {
       position: fixed;
       top: 40%;
-      left:10%;
-      width:400px;
+      left:5%;
+      width:300px;
+      font-size: 14px;
     }
       }
