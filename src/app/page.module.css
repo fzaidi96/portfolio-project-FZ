@@ -594,12 +594,13 @@
       }
     .aboutH1 {
       position: fixed;
-      top:20%;
+      top:10%;
       left:10%;
     }
     .abouttext {
       position: fixed;
       top: 40%;
       left:10%;
+      width:400px;
     }
       }
