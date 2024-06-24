@@ -578,7 +578,8 @@
     .main {
         display: flex;
         flex-direction: column;
-        min-height: 100vh;
+        min-height: min-content;
+        max-width: 450px;
       }
       .loading {
         font-size: 2rem;
@@ -595,7 +596,7 @@
 
       .headernav {
         font-size: 10px;
-        position: fixed;
+        position: absolute;
         top: 1px;
         right: 2px;
         gap: 0.5rem;
@@ -616,5 +617,7 @@
       left:5%;
       width:300px;
       font-size: 14px;
+      padding-bottom: 10rem;
+
     }
       }
