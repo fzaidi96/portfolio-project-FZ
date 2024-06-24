@@ -578,6 +578,7 @@
     .main {
         display: flex;
         flex-direction: column;
+        min-height: fit-content;
       }
       .loading {
         font-size: 2rem;
@@ -596,24 +597,26 @@
         font-size: 10px;
         position: absolute;
         top: 1px;
-        right: 1px;
+        right: 0.5px;
         gap: 0.5rem;
       }
-
-  
-
-    .aboutH1 {
-      position: absolute;
-      top:5rem;
-      left:1rem;
-      margin-top: 1rem;
-      margin-bottom: 3rem;
-    }
-    .abouttext {
-      position: absolute;
-      top: 20rem;
-      left:1rem;
-      width:300px;
-      font-size: 14px;
-    }
       }
+      @media (max-width: 768px) {
+        .projectinfocontainer {
+            position: relative;
+            padding: 1rem;
+            right: 0;
+            bottom: 0;
+        }
+    
+        .aboutH1 {
+          margin-top: 2rem;
+            font-size: 6rem;
+        }
+    
+        .abouttext {
+            width: 100%;
+            padding: 0 1rem;
+            font-size: 0.875rem;
+        }
+    }
