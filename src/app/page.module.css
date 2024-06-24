@@ -534,6 +534,7 @@
     font-size: 14px;
     margin-bottom: 3rem;
     gap:1rem;
+    color:#ADCAB7;
   }
 
   .emailBox {
@@ -542,6 +543,7 @@
     font-size: 14px;
     gap:1rem;
     margin-top: 1rem;
+    color:#E6EFE9;
   }
 
 
@@ -572,19 +574,32 @@
 
 }
   
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 765px) {
     .main {
         display: flex;
         flex-direction: column;
-        min-height: 120vh;
+        min-height: fit-content;
       }
       .loading {
-        font-size: 3rem;
+        font-size: 2rem;
     }
     .welcome {
-        font-size: 3rem;
+        font-size: 2rem;
     }
         .container2 {
           display: none; /* Hide container2 on a phone */
         }
+      .galleryAbout {
+        display:none;
+      }
+    .aboutH1 {
+      position: fixed;
+      top:20%;
+      left:10%;
+    }
+    .abouttext {
+      position: fixed;
+      top: 40%;
+      left:10%;
+    }
       }

@@ -34,7 +34,7 @@ export default function ContactPage() {
                 <p>A heartfelt shout-out to these amazing creators for their incredibly helpful content and tutorials, making learning accessible for everyone:</p>
                  <ul>
                     <li>
-                        Oliver Larose
+                        Olivier Larose
                     </li>
                     <li>
                         Andres Gonzalez
