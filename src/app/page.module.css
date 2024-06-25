@@ -8,6 +8,10 @@
     z-index: 1;
 }
 
+.subheading {
+  font-size: 36px;
+}
+
 .nav {
     position: relative;
     left:30px;
@@ -574,13 +578,16 @@
 
 }
   
-@media only screen and (max-width: 768px) {
-    
+@media only screen and (max-width: 768px) { 
     .loading {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     .welcome {
-        font-size: 1.5rem;
+        font-size: 2rem;
+    }
+
+    .subheading {
+      font-size: 20px;
     }
         .container2 {
           display: none; /* Hide container2 on a phone */
@@ -590,12 +597,20 @@
       }
 
       .headernav {
-        font-size: 10px;
+        font-size: 12px;
         position: absolute;
         top: 1px;
         right: 0.5px;
         gap: 0.5rem;
       }
+
+      .projectsnav {
+        font-size: 12px;
+        gap: 0.5rem;
+        position: absolute;
+        right:0.5px;
+        top: 1px;
+    }
       .projectinfocontainer {
         position: relative;
         padding: 1rem;
@@ -614,5 +629,167 @@
         font-size: 0.875rem;
         margin:0;
     } 
+    .container {
+      height: auto;
+      width: 100vw;
+      background-color: #2D2D2D;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      overflow: hidden;
+  }
+
+  .workH1 {
+      font-size: 10px;
+      width: auto;
+  }
+
+  .workP {
+      width: auto;
+      font-size: 12px;
+      font-weight: 300;
+  }
+
+  .navList {
+      position: relative;
+      list-style: none;
+      padding-left: 1rem;
+      color: #ADCAB7;
+      font-size: 14px;
+      font-weight: 500;
+      margin-top: 1rem;
+  }
+
+  .navList li {
+      display: block;
+      margin-bottom: 1rem;
+  }
+
+  .section2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2rem;
+  }
+
+  .codingProjects {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+  }
+
+  .codingProjects h1 {
+      font-size: 40px;
+      letter-spacing: -5px;
+      width: auto;
+      border-right: none;
+  }
+
+  .codingText p {
+      width: auto;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 200;
+  }
+
+  .CTA {
+      color: #ADCAB7;
+      padding-top: 0.5rem;
+      text-align: center;
+  }
+
+  .socialProjects {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+  }
+
+  .socialProjects h1 {
+      font-size: 40px;
+      letter-spacing: -5px;
+      width: auto;
+      border-right: none;
+  }
+
+  .socialText {
+      text-align: center;
+      width: auto;
+      margin: 1rem;
+      font-size: 12px;
+      font-weight: 200;
+  }
+
+  .section4 {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      margin-top: 2rem;
+  }
+
+  .copywritingText {
+      width: auto;
+      padding: 1rem;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 200;
+      margin: 0;
+  }
+
+  .copywritingTextCTA {
+      width: auto;
+      padding: 1rem;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 200;
+      color: #ADCAB7;
+      margin: 0;
+  }
+
+  .copywritingExamples {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+      margin: 2rem 0;
+  }
+
+  .copywritingExamples img {
+      border-radius: 50%;
+  }
+
+  .miscHeadline {
+      color: #ADCAB7;
+      margin: 2rem 1rem;
+      width: auto;
+      font-size: 40px;
+      letter-spacing: -10px;
+      border-right: none;
+      text-align: center;
+  }
+
+  .miscContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #E6EFE9;
+      border-top: solid 2.5px #8F8389;
+      border-bottom: solid 2.5px #8F8389;
+      padding: 2rem 1rem;
+  }
+
+  .moreWorkText {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: center;
+  }
+
+  .tagText {
+      color: #8F8389;
+      font-size: 12px;
+  }
       }
     

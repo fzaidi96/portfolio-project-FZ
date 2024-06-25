@@ -95,7 +95,7 @@ export default function Home() {
                 </span>
               </h1>
               <h1>it&apos;s fatima</h1>
-              <p style={{fontSize:36}}>developer, designer, creator</p>
+              <p className={styles.subheading}>developer, designer, creator</p>
             </div>
             <div>
               <nav className={styles.nav}>
