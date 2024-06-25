@@ -574,17 +574,13 @@
 
 }
   
-@media only screen and (max-width: 765px) {
-    .main {
-        display: flex;
-        flex-direction: column;
-        min-height: fit-content;
-      }
-      .loading {
-        font-size: 2rem;
+@media only screen and (max-width: 768px) {
+    
+    .loading {
+        font-size: 1.5rem;
     }
     .welcome {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
         .container2 {
           display: none; /* Hide container2 on a phone */
@@ -600,23 +596,23 @@
         right: 0.5px;
         gap: 0.5rem;
       }
-      }
-      @media (max-width: 768px) {
-        .projectinfocontainer {
-            position: relative;
-            padding: 1rem;
-            right: 0;
-            bottom: 0;
-        }
-    
-        .aboutH1 {
-          margin-top: 2rem;
-            font-size: 6rem;
-        }
-    
-        .abouttext {
-            width: 100%;
-            padding: 0 1rem;
-            font-size: 0.875rem;
-        }
+      .projectinfocontainer {
+        position: relative;
+        padding: 1rem;
+        right: 0;
+        bottom: 0;
     }
+
+    .aboutH1 {
+        margin-top: 4rem;
+        font-size: 6rem;
+    }
+
+    .abouttext {
+        width: 100%;
+        padding: 0 1rem;
+        font-size: 0.875rem;
+        margin:0;
+    } 
+      }
+    
