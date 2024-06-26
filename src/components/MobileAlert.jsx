@@ -27,8 +27,9 @@ const MobileAlert = () => {
     <div className={styles.mobileAlert}>
       <div className={styles.overlay}></div>
       <div className={styles.dialog}>
-        <p>This website is optimized for desktop. You can find all the content there.</p>
-        <button className={styles.mobileAlertButton} onClick={() => setIsMobile(false)}>Close</button>
+        <h4>FYI: this portfolio has been optimized for desktop.</h4>
+        <p style={{ fontSize: '8px' }}>Please see the web version for more content and full functionality :)</p>
+        <div className={styles.closeButton} onClick={() => setIsMobile(false)}>X</div>
       </div>
     </div>
   );
