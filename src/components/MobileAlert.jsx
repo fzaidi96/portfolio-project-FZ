@@ -3,6 +3,7 @@ import styles from "@/app/page.module.css";
 
 const MobileAlert = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [showDialog, setShowDialog] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -19,7 +20,14 @@ const MobileAlert = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  if (!isMobile) {
+  useEffect(() => {
+    if (isMobile && !sessionStorage.getItem('alertShown')) {
+      setShowDialog(true);
+      sessionStorage.setItem('alertShown', 'true');
+    }
+  }, [isMobile]);
+
+  if (!isMobile || !showDialog) {
     return null;
   }
 
@@ -27,9 +35,8 @@ const MobileAlert = () => {
     <div className={styles.mobileAlert}>
       <div className={styles.overlay}></div>
       <div className={styles.dialog}>
-        <h4>FYI: this portfolio has been optimized for desktop.</h4>
-        <p style={{ fontSize: '8px' }}>Please see the web version for more content and full functionality :)</p>
-        <div className={styles.closeButton} onClick={() => setIsMobile(false)}>X</div>
+        <p style={{ fontSize: '12px' }}>Please see the web version for more content and full functionality!</p>
+        <div className={styles.closeButton} onClick={() => setShowDialog(false)}>Close</div>
       </div>
     </div>
   );
