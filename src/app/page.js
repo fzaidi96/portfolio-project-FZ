@@ -1,10 +1,11 @@
-"use client"
+"use client";
 import Link from "next/link";
 import styles from "./page.module.css";
 import { useState, useEffect } from 'react';
 import LoadingScreen from "@/components/LoadingScreen";
 import { AnimatePresence, motion } from "framer-motion";
 import Gallery from "@/components/Gallery";
+import MobileAlert from "@/components/MobileAlert";
 
 export default function Home() {
   const languages = ['hello.', 'hallo.','bonjour.','안녕하세요.','buongiorno.','.السلام علیکم']
@@ -26,7 +27,6 @@ export default function Home() {
     const interval = setInterval(() => {
       setCurrentLanguageIndex((prevIndex) => (prevIndex + 1) % languages.length);
     }, 150); 
-    
 
     setIntervalId(interval);
   };
@@ -51,10 +51,10 @@ export default function Home() {
 
   return (
     <AnimatePresence mode="wait">
-    {isLoading ? (
-      <LoadingScreen />
-    ) : (
-      <motion.div
+      {isLoading ? (
+        <LoadingScreen />
+      ) : (
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -89,30 +89,30 @@ export default function Home() {
           >
             <div className={styles.container1}>
               <div className={styles.welcome}>
-              <h1>
-                <span onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                  {isHovered ? languages[currentLanguageIndex] : languages[0]}
-                </span>
-              </h1>
-              <h1>it&apos;s fatima</h1>
-              <p className={styles.subheading}>developer, designer, creator</p>
-            </div>
-            <div>
-              <nav className={styles.nav}>
-                <Link href="about">About</Link>
-                <Link href="/projects">Work</Link>
-                <Link href="/contact">Contact</Link>
-              </nav>
-            </div>
+                <h1>
+                  <span onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                    {isHovered ? languages[currentLanguageIndex] : languages[0]}
+                  </span>
+                </h1>
+                <h1>it&apos;s fatima</h1>
+                <p className={styles.subheading}>developer, designer, creator</p>
+              </div>
+              <div>
+                <nav className={styles.nav}>
+                  <Link href="about">About</Link>
+                  <Link href="/projects">Work</Link>
+                  <Link href="/contact">Contact</Link>
+                </nav>
+              </div>
             </div>
 
-          <div className={styles.container2}>
-            <Gallery />
-          </div>
+            <div className={styles.container2}>
+              <Gallery />
+            </div>
           </motion.main>
         </motion.div>
       )}
+      <MobileAlert />
     </AnimatePresence>
   );
 }
-
