@@ -653,20 +653,7 @@
         gap: 0.5rem;
       }
 
-      .projectsnav {
-        font-size: 12px;
-        gap: 0.5rem;
-        position: absolute;
-        right:0.5px;
-        top: 1px;
-    }
-      .projectinfocontainer {
-        position: relative;
-        padding: 1rem;
-        right: 0;
-        bottom: 0;
-    }
-
+/* about */
     .aboutH1 {
         margin-top: 6rem;
         font-size: 6rem;
@@ -678,6 +665,7 @@
         font-size: 0.875rem;
         margin:0;
     } 
+    /* work  */
     .container {
       height: auto;
       width: 100vw;
@@ -685,18 +673,19 @@
       display: flex;
       flex-direction: column;
       gap: 1rem;
-      overflow: hidden;
-  }
-
-  .workH1 {
-      font-size: 10px;
-      width: auto;
-  }
-
-  .workP {
-      width: auto;
-      font-size: 12px;
-      font-weight: 300;
+      .workH1 {
+        font-size: 95px;
+        margin-top: 5rem;
+        margin-bottom: 0.2rem;
+        padding: 1rem 0rem 1rem 1rem;
+      }
+      .workP {
+        font-size: 15px;
+        width: 100vw;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: center;
+      }
   }
 
   .navList {
@@ -741,12 +730,18 @@
       text-align: center;
       font-size: 12px;
       font-weight: 200;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
   }
 
   .CTA {
       color: #ADCAB7;
       padding-top: 0.5rem;
       text-align: center;
+  }
+
+  .ImageSlider {
+    margin:1rem;
   }
 
   .socialProjects {
@@ -887,3 +882,6 @@
         display: inline-block;
         font-size: 0.5rem;
       }
+    
+
+  

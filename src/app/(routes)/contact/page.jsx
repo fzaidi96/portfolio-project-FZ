@@ -15,12 +15,12 @@ export default function ContactPage() {
             <div className={styles.contactPage}>
                 <h1 className={styles.title}>Contact me .</h1>
                 <div className={styles.email}> <p>Drop me a message via any of the channels below!</p>
-                <div className={styles.emailBox}> <p>f.zaidi182@gmail.com</p></div>
+                <div className={styles.emailBox}>  <Link href="mailto:f.zaidi182@gmail.com">f.zaidi182@gmail.com</Link></div>
             </div>
             <div className={styles.socials}>
                 <div className={styles.contactBar}><ContactBar /></div>
             </div>
-            <div><Link href="https://docs.google.com/document/d/1OHQsaCyyZKl6esbRgbZ6BrxqqlgStzYOmXeAuxDdKN8/edit?usp=sharing"><p>CV</p></Link></div>
+            <div><Link href="https://fzaidi96.github.io/FZ-CV-2024/Fatima%20Zaidi%20CV%202024.pdf"><p>CV</p></Link></div>
             <div className={styles.credits}>
                     <Link href="#credits"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6H11L7.5 10.5L4 6Z" fill="currentColor"></path></svg></Link>
                 <div className={styles.credits} id="credits"><p>Grateful acknowledgment to the following for their invaluable resources, which made the creation of this portfolio possible:</p>
