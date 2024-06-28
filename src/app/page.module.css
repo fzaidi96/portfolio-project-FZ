@@ -363,7 +363,54 @@
     color: #ADCAB7;
     padding-top: 0.5rem;
   }
-
+  .carouselWrapper {
+    display: flex;
+    height: 600px;
+    width: 350px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carouselContainer {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 350px;
+    height: 600px;
+    flex-shrink: 0;
+  }
+  
+  .projectimage {
+    object-fit: fill;
+  }
+  
+  .navButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .navButton:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .navButton:first-of-type {
+    left: 10px;
+  }
+  
+  .navButton:last-of-type {
+    right: 10px;
+  }
+  
 
 .socialProjects{
   display: flex;

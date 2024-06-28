@@ -19,6 +19,35 @@ const videos = [
   { src: "12.mp4", link: "https://portfolio-project-fz.vercel.app/videos/12.mp4" },
 ]
 
+const Column = ({videos, y}) => {
+  return (
+    <motion.div 
+      className={styles.videoColumn}
+      style={{y}}
+      >
+      {
+        videos.map( (video, i) => {
+          return <div key={i} className={styles.videoContainer}>
+            {video.link ? (
+              <a href={video.link} target="_blank" rel="noopener noreferrer">
+                <video className={styles.video} controls controlsList="nofullscreen nodownload" playsInline>
+                  <source src={`/videos/${video.src}`} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </a>
+            ) : (
+              <video className={styles.video} controls controlsList=" nofullscreen nodownload" playsInline>
+                <source src={`/videos/${video.src}`} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            )}
+          </div>
+        })
+      }
+    </motion.div>
+  )
+}
+
 export default function VideoGallery() {
   
   const gallery = useRef(null);
@@ -66,34 +95,5 @@ export default function VideoGallery() {
       </div>
       <div className={styles.videoSpacer}></div>
     </main>
-  )
-}
-
-const Column = ({videos, y}) => {
-  return (
-    <motion.div 
-      className={styles.videoColumn}
-      style={{y}}
-      >
-      {
-        videos.map( (video, i) => {
-          return <div key={i} className={styles.videoContainer}>
-            {video.link ? (
-              <a href={video.link} target="_blank" rel="noopener noreferrer">
-                <video className={styles.video} controls controlsList="nofullscreen nodownload" playsInline>
-                  <source src={`/videos/${video.src}`} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </a>
-            ) : (
-              <video className={styles.video} controls controlsList=" nofullscreen nodownload" playsInline>
-                <source src={`/videos/${video.src}`} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            )}
-          </div>
-        })
-      }
-    </motion.div>
   )
 }

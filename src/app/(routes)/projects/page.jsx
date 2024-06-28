@@ -2,6 +2,7 @@ import Link from "next/link";
 import styles from '@/app/page.module.css';
 import VideoGallery from "@/components/VideoGallery";
 import Image from "next/image";
+import ImageSlider from "@/components/ImageSlider";
 
 export default function ProjectsPage() {
     return (
@@ -38,7 +39,7 @@ export default function ProjectsPage() {
                     <h1>web dev</h1> 
                     <div className={styles.codingText}> <p>I&apos;m fresh out of a full-time 12-week bootcamp in full stack web development where I got hands-on with HTML, CSS, JS, SQL. Passionate about UI/UX, I love creating dynamic and visually stunning web apps. I have the ability to integrate third-party APIs, cloud storage and user authentication services into my builds. My projects demonstrate a range of skills including conditional rendering, game mechanics, data validation. My tech stack includes Node.js, Express.js, React, Next.js and Tailwind. Since completing the bootcamp, I&apos;ve been honing my skills with personal projects.</p><p className={styles.CTA}><strong>Swipe through to check out my work!</strong></p></div> 
                 </div>
-                <Image src="/images/berlin.jpg" height={600} width={350} alt="image"/>
+                <ImageSlider />
                 </container> 
                 </div> 
 
