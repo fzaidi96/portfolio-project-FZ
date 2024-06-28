@@ -652,19 +652,30 @@
         right: 0.5px;
         gap: 0.5rem;
       }
-
-/* about */
-    .aboutH1 {
-        margin-top: 6rem;
-        font-size: 6rem;
+      .projectsnav {
+        font-size: 12px;
+        gap: 0.5rem;
+        position: absolute;
+        right:0.5px;
+        top: 1px;
     }
 
-    .abouttext {
-        width: 100%;
-        padding: 0 1rem;
-        font-size: 0.875rem;
-        margin:0;
-    } 
+/* about */
+    .projectinfocontainer {
+      width:100vw;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding-left: 4rem;
+      .aboutH1 {
+        font-size: 60px;
+      }
+      .abouttext {
+        font-size: 14px;
+        width:100vw;
+      }
+    }
+    
     /* work  */
     .container {
       height: auto;
@@ -837,6 +848,7 @@
   }
       }
     
+      /* mobile pop up */
       .mobileAlert {
         position: fixed;
         top: 0;
