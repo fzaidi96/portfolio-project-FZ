@@ -672,7 +672,8 @@
       }
       .abouttext {
         font-size: 14px;
-        width:100vw;
+        max-width:100vw;
+        padding-left: 1rem;
       }
     }
     
@@ -692,7 +693,7 @@
       }
       .workP {
         font-size: 15px;
-        width: 100vw;
+        max-width: 100vw;
         padding-left: 1rem;
         padding-right: 1rem;
         text-align: center;
