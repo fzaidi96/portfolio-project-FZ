@@ -43,6 +43,12 @@ const Column = ({ videos, y }) => {
     };
   }, []);
 
+  const handleLinkClick = (event) => {
+    if (event.type === 'click' && event.button === 0) {
+      event.preventDefault();
+    }
+  };
+
   return (
     <motion.div 
       className={styles.videoColumn} 
@@ -51,14 +57,14 @@ const Column = ({ videos, y }) => {
       {videos.map((video, i) => (
         <div key={i} className={styles.videoContainer}>
           {video.link ? (
-            <a href={video.link} target="_blank" rel="noopener noreferrer">
-              <video className={styles.video} poster={video.poster} controls controlsList="nodownload" playsInline>
+            <a href={video.link} target="_blank" rel="noopener noreferrer" onClick={handleLinkClick} onAuxClick={handleLinkClick}>
+              <video className={styles.video} poster={video.poster} controls controlsList="nodownload autoPlay muted" playsInline>
                 <source src={`/videos/${video.src}`} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </a>
           ) : (
-            <video className={styles.video} poster={video.poster} controls controlsList="nodownload" playsInline>
+            <video className={styles.video} poster={video.poster} controls controlsList="nodownload autoPlay muted" playsInline>
               <source src={`/videos/${video.src}`} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
@@ -68,6 +74,7 @@ const Column = ({ videos, y }) => {
     </motion.div>
   );
 }
+
 
 export default function VideoGallery() {
   const gallery = useRef(null);
