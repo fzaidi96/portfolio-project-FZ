@@ -55,7 +55,7 @@ export default function AboutPage() {
                 <Column images={[images[5], images[6], images[7], images[8], images[9]]}/>
             </motion.div>
             <div className={styles.projectinfocontainer}>
-            <h1 className={styles.aboutH1}>About Me.</h1>
+            <h1 className={styles.aboutH1}>About Me  .</h1>
                 <div className={styles.abouttext}>
                 <p> I&apos;m a 27-year-old Norfolk native who recently returned after spending a few vibrant years in London, Oxford and Berlin. My career has seen me wearing many hats, especially in the startup world, where I&apos;ve navigated the realms of marketing and product development. I kicked off at Bimble, an app for sharing and discovering places with friends, and my latest stint was in the fem-tech space, where I contributed to bringing a new brand to market. Collaborating with developers and designers throughout my career ignited my passion for UI/UX and product management, leading me to up my technical skill game and get hands on with coding on an intensive developer bootcamp! 
                 When I&apos;m not deep into tech, you&apos;ll find me fulfilling all my basic needs with coffee and RuPaul&apos;s Drag Race. I&apos;m a film and literature girlie, having got my degree in languages from the University of Oxford (fun fact - I&apos;ve got a least a bit of working knowledge of all the languages on the homepage) and I think literally anything can be improved with a cat. Get in touch and we can chat design, branding and code or Modernist lit and all things K-Pop. I can yap about it all.</p></div>

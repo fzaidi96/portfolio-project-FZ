@@ -267,8 +267,8 @@
     }
     .workP{
         padding-left: 2.5rem;
-        width: 1000px;
-        font-size: 15px;
+        width: 800px;
+        font-size: 17px;
         font-weight: 300;
     }
 }
@@ -319,12 +319,15 @@
 
 .navList {
     position: relative;
+    display: flex;
+    flex-direction: column;
     list-style: none;
-    padding-left: 1;
+    padding-left: 3rem;
     color:#ADCAB7;
     font-size: 18px;
     font-weight: 500;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
+    gap: 1rem;
 }
 
 .navList li {

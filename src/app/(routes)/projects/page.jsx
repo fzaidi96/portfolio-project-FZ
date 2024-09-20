@@ -18,9 +18,9 @@ export default function ProjectsPage() {
             <div className={styles.container} id="section1">
                 <h1 className={styles.workH1}>My Work .</h1>
                 <p className={styles.workP}><strong>Past projects, content, and work experience.</strong></p>
-                <p className={styles.workP}>Welcome to the whirlwind tour of my professional journey! From full stack web development to social media marketing and copywriting, I&apos;ve worn a lot of hats and learnt a lot along the way. My journey started in digital marketing, when I joined a grad scheme at a London agency and I soon found myself delving head first into the world of startup. Before I knew it, I <em>was</em> the marketing team! Looking to pivot into UI/UX and Product Management, I decided to learn web development and enrolled on a bootcamp where I got hands on with coding and learned how to build the products I used to market.</p>
+                <p className={styles.workP}>Welcome to my professional journey! From full-stack development to social media marketing and copywriting, I&apos;ve worn many hats. I began in digital marketing at a London agency and soon jumped into startup where I handled all things content and strategy. Looking to pivot into UI/UX and Product Management, I joined a web development bootcamp to build the products I once marketed.</p>
                 
-                <p className={styles.workP}> The last few years have had me unearthing unexpected skills and passions - I even translated work that got published! - but I&apos;ve realised I thrive the most when solving problems and letting my creativity flow. My range of experience means I bring a unique perspective to my work. Dive into my projects and see the full spectrum of creativity, and experience. I promise you won&apos;t be bored!</p>
+                <p className={styles.workP}> The last few years have had me unearthing unexpected skills and passions - I even translated work that got published! - but I thrive most when solving problems and unleashing creativity. <em>My range of experience means I bring a unique perspective to my work. </em>Jump in to discover more!</p>
                 <nav>
                     <ul className={styles.navList}>
                         <li><Link href="#section2">• Coding</Link></li>
