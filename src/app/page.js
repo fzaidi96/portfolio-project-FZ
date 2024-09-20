@@ -104,10 +104,12 @@ export default function Home() {
                   <Link href="/contact">Contact</Link>
                 </nav>
               </div>
+              <div className={styles.bubble1}></div>
             </div>
 
             <div className={styles.container2}>
               <Gallery />
+
             </div>
           </motion.main>
         </motion.div>

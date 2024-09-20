@@ -1,12 +1,26 @@
+'use client'
 import Link from "next/link";
 import styles from '@/app/page.module.css';
 import VideoGallery from "@/components/VideoGallery";
 import Image from "next/image";
 import ImageSlider from "@/components/ImageSlider";
+import { useEffect, useState } from "react";
 
 export default function ProjectsPage() {
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        // Simulate loading time before the overlay is wiped away
+        const timer = setTimeout(() => {
+            setLoading(false);
+        }, 2000); // 2 seconds delay
+
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
         <main className={styles.main}>
+            {loading && <div className={styles.workOverlay}></div>}
             <header>
                 <nav className={styles.projectsnav}>
                     <Link href="/">Home</Link>
@@ -17,19 +31,14 @@ export default function ProjectsPage() {
             
             <div className={styles.container} id="section1">
                 <h1 className={styles.workH1}>My Work .</h1>
-                <p className={styles.workP}><strong>Past projects, content, and work experience.</strong></p>
+                
+            <p className={styles.workP}><strong>Past projects, content, and work experience.</strong></p>
                 <p className={styles.workP}>Welcome to my professional journey! From full-stack development to social media marketing and copywriting, I&apos;ve worn many hats. I began in digital marketing at a London agency and soon jumped into startup where I handled all things content and strategy. Looking to pivot into UI/UX and Product Management, I joined a web development bootcamp to build the products I once marketed.</p>
                 
-                <p className={styles.workP}> The last few years have had me unearthing unexpected skills and passions - I even translated work that got published! - but I thrive most when solving problems and unleashing creativity. <em>My range of experience means I bring a unique perspective to my work. </em>Jump in to discover more!</p>
-                <nav>
-                    <ul className={styles.navList}>
-                        <li><Link href="#section2">• Coding</Link></li>
-                        <li><Link href="#section3">• Social Media</Link></li>
-                        <li><Link href="#section4">• Copywriting</Link></li>
-                        <li><Link href="#section5">• Branding & More</Link></li>
-                    </ul>
-                </nav>
+                <p className={styles.workP}> The last few years have had me unearthing unexpected skills and passions - I even translated work that got published! - but I thrive most when solving problems and unleashing creativity. My range of experience means I bring a <em>* unique *</em> perspective to my work.</p>
+                <p className={styles.workP}>Why don&apos;t you take a look?</p>
                 
+                <div className={styles.bubble1}></div>
             </div>
 
             {/* section two - coding */}
