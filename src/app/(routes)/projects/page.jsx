@@ -37,7 +37,7 @@ export default function ProjectsPage() {
               <container className={styles.section2}>     
              <div className={styles.codingProjects}>
                     <h1>web dev</h1> 
-                    <div className={styles.codingText}> <p>I&apos;m fresh out of a full-time bootcamp in full stack web development where I got hands-on with HTML, CSS, JS, SQL. Passionate about UI/UX, I love creating dynamic and visually stunning web apps. I have the ability to integrate third-party APIs, cloud storage and user authentication services into my builds. My projects demonstrate a range of skills including conditional rendering, game mechanics, data validation. My tech stack includes Node.js, Express.js, React, Next.js and Tailwind. Since completing the bootcamp, I&apos;ve been honing my skills with personal projects.</p><p className={styles.CTA}><strong>Click through to learn more about each project!</strong></p></div> 
+                    <div className={styles.codingText}> <p>I&apos;m fresh out of a bootcamp in full stack web development where I got hands-on with HTML, CSS, JS, SQL.  My projects demonstrate a range of skills including integrating third-party APIs, conditional rendering, game mechanics, data validation. My tech stack includes Node.js, Express.js, React.js, Next.js and Tailwind. Since completing the bootcamp, I&apos;ve been honing my skills with personal projects.</p><p className={styles.CTA}><strong>Click through to learn more about each project!</strong></p></div> 
                 </div>
                 <div className={styles.ImageSlider}><ImageSlider /></div>
                 </container> 
@@ -46,7 +46,7 @@ export default function ProjectsPage() {
               {/* section three - social media content */}
             <div className={styles.socialContainer} id="section3"><div className={styles.socialProjects}>
                     <h1>social content</h1> 
-                    <div className={styles.socialText}> <p>So far most of my working life has been in marketing;  starting out on a grad scheme in PPC before diving into startup, where I found myself managing the entire online presence for a new social app, Bimble. I was behind the email marketing, PR, blog releases and more, but I truly found my groove in creating and managing social media content, especially short-form video (thank you TikTok)!</p> <p className={styles.CTA}><strong>Watch some of my favourite content here!</strong></p></div></div> 
+                    <div className={styles.socialText}> <p>So far most of my working life has been in marketing; starting out on a grad scheme in PPC before diving into startup, where I found myself managing the entire online presence for a new social app, Bimble. I was behind the email marketing, PR, blog releases and more, but I truly found my groove in creating and managing social media content, especially short-form video (thank you TikTok)!</p> <p className={styles.CTA}><strong>Watch some of my favourite content here!</strong></p></div></div> 
                     <VideoGallery />
             </div>
 
@@ -60,7 +60,7 @@ export default function ProjectsPage() {
                     <div className={styles.img}><Link href="https://www.instagram.com/p/CamLsaYsVfQ/"><Image src="/images/four.png" width={200} height={200} alt="social media"/></Link></div>
                     <div className={styles.img}><Link href="https://bimbleapp.medium.com/this-christmas-gift-with-bimble-1c7e97143325"><Image src="/images/five.png" width={200} height={200} alt="social media"/></Link></div>
                 </div>
-                <p className={styles.copywritingTextCTA}><strong>I&apos;ve selected posts below that represent my favourite work and style.</strong></p> <p className={styles.copywritingText}>I have a degree in literature so naturally I know and love good writing. And through my experience in marketing, I have also come to know and love good copy. Some of my achiements include managing a blog, with a readership of 20k - editing every published piece and writing my own -  translating a German text for publication in English, and of course, writing 100s of social media captions.</p>    
+                <p className={styles.copywritingTextCTA}><strong>I&apos;ve selected posts below that represent my favourite work and style.</strong></p> <p className={styles.copywritingText}>I have a degree in literature so naturally I know and love good writing. Some of my achiements include managing a blog, with a readership of 20k - editing every published piece and writing my own -  translating a German text for publication in English, and of course, writing 100s of social media captions.</p>    
                 <div className={styles.codingProjects}><h1>copywriting</h1></div>
              </container>
              </div>
