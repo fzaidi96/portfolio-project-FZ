@@ -69,7 +69,7 @@ export default function ProjectsPage() {
                     <div className={styles.img}><Link href="https://www.instagram.com/p/CamLsaYsVfQ/"><Image src="/images/four.png" width={200} height={200} alt="social media"/></Link></div>
                     <div className={styles.img}><Link href="https://bimbleapp.medium.com/this-christmas-gift-with-bimble-1c7e97143325"><Image src="/images/five.png" width={200} height={200} alt="social media"/></Link></div>
                 </div>
-                <p className={styles.copywritingTextCTA}><strong>I&apos;ve selected posts below that represent my favourite work and style.</strong></p> <p className={styles.copywritingText}>I have a degree in literature so naturally I know and love good writing. Some of my achiements include managing a blog, with a readership of 20k - editing every published piece and writing my own -  translating a German text for publication in English, and of course, writing 100s of social media captions.</p>    
+                <p className={styles.copywritingTextCTA}><strong>I&apos;ve selected posts below that represent my favourite work and style.</strong></p> <p className={styles.copywritingText}>I have a degree in literature so naturally I know and love good writing. Some of my achievements include managing a blog, with a readership of 20k - editing every published piece and writing my own -  translating a German text for publication in English, and of course, writing 100s of social media captions.</p>    
                 <div className={styles.codingProjects}><h1>copywriting</h1></div>
              </container>
              </div>
