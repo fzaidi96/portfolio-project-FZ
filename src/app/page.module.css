@@ -742,6 +742,9 @@
         max-width:100vw;
         padding-left: 1rem;
       }
+    .bubble2 {
+      z-index: -1;
+    }
     }
     
     /* work  */
