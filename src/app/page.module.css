@@ -743,7 +743,7 @@
         padding-left: 1rem;
       }
     .bubble2 {
-      z-index: -200;
+      display: none;
     }
     }
     
