@@ -35,8 +35,8 @@ const MobileAlert = () => {
     <div className={styles.mobileAlert}>
       <div className={styles.overlay}></div>
       <div className={styles.dialog}>
-        <p style={{ fontSize: '12px' }}>Please see the web version for more content and full functionality!</p>
-        <div className={styles.closeButton} onClick={() => setShowDialog(false)}>Close</div>
+        <p style={{ fontSize: '12px' }}>Please see the web version for more content and full functionality.</p>
+        <div className={styles.closeButton} onClick={() => setShowDialog(false)}>x</div>
       </div>
     </div>
   );

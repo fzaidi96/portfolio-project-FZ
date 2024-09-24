@@ -743,7 +743,7 @@
         padding-left: 1rem;
       }
     .bubble2 {
-      z-index: -1;
+      z-index: -200;
     }
     }
     
@@ -948,7 +948,6 @@
         position: relative;
         background: #8F8389;
         padding: 20px;
-        border-radius: 20px;
         text-align: center;
         border: solid 0.5px #E6EFE9;
         z-index: 1010;
