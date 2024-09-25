@@ -69,8 +69,8 @@ export default function AboutPage() {
             <h1 className={styles.aboutH1}>About Me  .</h1>
                 <div className={styles.abouttext}>
                 <p> I&apos;m a 27-year-old Norfolk native who recently returned after spending a few vibrant years in London, Oxford and Berlin. My career spans marketing, community management and user-centred design, mainly in startups. I kicked off at Bimble, an app for sharing and discovering places with friends, and my latest stint was in the fem-tech space, where I contributed to bringing a new brand to market.
-                Working closely with developers and designers sparked a passion for UI/UX and product management, which led me to get hands on wit coding on a bootcamp.
-                I hold a degree in languages and linguistics from Oxford and I love coffee, RuPaul&apos;s Drag Race, film, and fashion darling. Let&apos;s chat design, branding, code or Kafka, K-Pop and cats - literally can yap about it all.</p></div>
+                Working closely with developers and designers sparked a passion for UI/UX and product management, which led me to get hands on with coding on a bootcamp.
+                I hold a degree in languages and linguistics from Oxford and I love coffee, RuPaul&apos;s Drag Race, film, and fashion dahling. Let&apos;s chat design, branding, code or Kafka, K-Pop and cats - literally can yap about it all.</p></div>
             </div>
             <div className={styles.bubble2}></div>
 
