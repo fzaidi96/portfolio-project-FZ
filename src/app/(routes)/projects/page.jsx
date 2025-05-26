@@ -33,7 +33,7 @@ export default function ProjectsPage() {
                 <h1 className={styles.workH1}>My Work .</h1>
                 
             <p className={styles.workP}><strong>Past projects, content, and work experience.</strong></p>
-                <p className={styles.workP}>Explore my journey through full-stack development, digital marketing, and content strategy. From agency to startup, I've specialised in everything from copywriting to strategy. Looking to pivot into UI/UX and Product Management, I joined a web development bootcamp to build the products I once marketed.</p>
+                <p className={styles.workP}>Explore my journey through full-stack development, digital marketing, and content strategy. From agency to startup, I&apos;ve specialised in everything from copywriting to strategy. Looking to pivot into UI/UX and Product Management, I joined a web development bootcamp to build the products I once marketed.</p>
                 
                 <p className={styles.workP}> My range of experience means I bring a <em>* unique *</em> perspective to my work.</p>
                 <p className={styles.workP}>Why don&apos;t you take a look?</p>
